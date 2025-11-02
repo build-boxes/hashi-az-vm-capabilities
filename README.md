@@ -99,6 +99,7 @@ Checks if Azure VM SKU supports Encryption-At-Host. Uses a Terraform custom Prov
     provider_installation {
         dev_overrides {
             "registry.terraform.io/example/azvmcapability" =  "/home/<USERNAME>/.terraform.d/plugins/example/azvmcapability/0.1.0/linux_amd64"
+            // "registry.terraform.io/example/azvmcapability" = "/home/<USERNAME>/go/bin/terraform-provider-azvmcapability"
         }
 
         direct {}
