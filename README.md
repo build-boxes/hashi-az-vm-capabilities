@@ -87,6 +87,7 @@ Checks if Azure VM SKU supports Encryption-At-Host. Uses a Terraform custom Prov
     ```
     cd example
     terraform init
+    terraform plan
     terraform apply
     ```
     Make sure you have exported youre Azure token:
