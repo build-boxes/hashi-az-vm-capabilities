@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
-	"terraform-provider-azvmcapability/provider"
+	"github.com/build-boxes/hashi-az-vm-capabilities/terraform-provider-azvmcapability/provider"
 )
 
 func main() {

@@ -1,0 +1,3 @@
+subscription_id = "000-000-000-0000-000000000000"
+region          = "eastus"
+sku_name        = "Standard_D2s_v3"
