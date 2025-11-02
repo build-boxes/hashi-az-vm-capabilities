@@ -9,13 +9,13 @@ terraform {
 
 provider "azvmcapability" {}
 
-data "azvm_encryption_capability" "check" {
+data "azvmcapability_encryptioncapability" "check" {
   subscription_id = var.subscription_id
   region          = var.region
   sku_name        = var.sku_name
 }
 
 output "encryption_supported" {
-  value = data.azvm_encryption_capability.check.supported
+  value = data.azvmcapability_encryptioncapability.check.supported
 }
 

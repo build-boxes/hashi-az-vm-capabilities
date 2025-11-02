@@ -33,7 +33,7 @@ func (p *azvmcapabilityProvider) Configure(ctx context.Context, req provider.Con
 
 func (p *azvmcapabilityProvider) DataSources(_ context.Context) []func() datasource.DataSource {
 	return []func() datasource.DataSource{
-		NewEncryptionCapabilityDataSource,
+		NewEncryptioncapabilityDataSource,
 	}
 }
 
