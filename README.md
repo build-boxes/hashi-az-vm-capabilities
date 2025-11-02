@@ -32,6 +32,7 @@ Checks if Azure VM SKU supports Encryption-At-Host. Uses a Terraform custom Prov
     go mod init github.com/yourname/terraform-provider-azvmcapability
     go mod init github.com/build-boxes/hashi-az-vm-capabilities
     go mod init github.com/build-boxes/hashi-az-vm-capabilities/terraform-provider-azvmcapability
+    go mod init terraform-provider-azvmcapability
     ```
     Replace "yourname" with your Github or local namespace.
 
@@ -68,7 +69,7 @@ Checks if Azure VM SKU supports Encryption-At-Host. Uses a Terraform custom Prov
     Terraform looks for custom providers in a specific directory structure. Create this under your home directory:
     ```
     mkdir -p ~/.terraform.d/plugins/example/azvmcapability/0.1.0/linux_amd64
-    mv terraform-provider-azvmcapability ~/.terraform.d/plugins/example/azvmcapability/0.1.0/linux_amd64/
+    mv terraform-provider-azvmcapability ~/.terraform.d/plugins/example/azvmcapability/0.1.0/linux_amd64/terraform-provider-example_azvmcapability
     ```
     The path must match the source and version you declare in your Terraform config:
     ```Hcl

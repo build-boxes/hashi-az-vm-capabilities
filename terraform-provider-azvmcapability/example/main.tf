@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     azvmcapability = {
-      source  = "example/azvmcapability"
+      source  = "registry.terraform.io/example/azvmcapability"
       version = "0.1.0"
     }
   }

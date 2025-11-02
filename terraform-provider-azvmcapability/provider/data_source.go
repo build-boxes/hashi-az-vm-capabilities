@@ -27,7 +27,7 @@ type encryptionCapabilityModel struct {
 }
 
 func (d *encryptionCapabilityDataSource) Metadata(_ context.Context, req datasource.MetadataRequest, resp *datasource.MetadataResponse) {
-	resp.TypeName = "azvm_encryption_capability"
+	resp.TypeName = "azvmEncryptionCapability"
 }
 
 func (d *encryptionCapabilityDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, resp *datasource.SchemaResponse) {

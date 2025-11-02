@@ -24,6 +24,11 @@ profile.cov
 go.work
 go.work.sum
 
+# Go Generated Files
+go.mod
+go.sum
+terraform-provider-azvmcapability
+
 # env file
 .env
 
