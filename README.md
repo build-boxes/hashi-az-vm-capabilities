@@ -22,6 +22,7 @@ Checks if Azure VM SKU supports Encryption-At-Host. Uses a Terraform custom Prov
 1. Run:
     ```
     terraform init
+    terraform plan
     terraform apply
     ```
 
