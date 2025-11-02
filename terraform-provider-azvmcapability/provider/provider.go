@@ -8,28 +8,33 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 )
 
+// Ensure the implementation satisfies the expected interfaces.
+// var (
+//     _ provider.Provider = &azvmcapabilityProvider{}
+// )
+
 func New() provider.Provider {
-	return &azvmProvider{}
+	return &azvmcapabilityProvider{}
 }
 
-type azvmProvider struct{}
+type azvmcapabilityProvider struct{}
 
-func (p *azvmProvider) Metadata(_ context.Context, _ provider.MetadataRequest, resp *provider.MetadataResponse) {
+func (p *azvmcapabilityProvider) Metadata(_ context.Context, _ provider.MetadataRequest, resp *provider.MetadataResponse) {
 	resp.TypeName = "azvmcapability"
 }
 
-func (p *azvmProvider) Schema(_ context.Context, _ provider.SchemaRequest, resp *provider.SchemaResponse) {
+func (p *azvmcapabilityProvider) Schema(_ context.Context, _ provider.SchemaRequest, resp *provider.SchemaResponse) {
 	resp.Schema = schema.Schema{}
 }
 
-func (p *azvmProvider) Configure(ctx context.Context, req provider.ConfigureRequest, resp *provider.ConfigureResponse) {}
+func (p *azvmcapabilityProvider) Configure(ctx context.Context, req provider.ConfigureRequest, resp *provider.ConfigureResponse) {}
 
-func (p *azvmProvider) DataSources(_ context.Context) []func() datasource.DataSource {
+func (p *azvmcapabilityProvider) DataSources(_ context.Context) []func() datasource.DataSource {
 	return []func() datasource.DataSource{
 		NewEncryptionCapabilityDataSource,
 	}
 }
 
-func (p *azvmProvider) Resources(_ context.Context) []func() resource.Resource {
+func (p *azvmcapabilityProvider) Resources(_ context.Context) []func() resource.Resource {
 	return nil
 }
