@@ -2,16 +2,17 @@ package provider
 
 import (
 	"context"
+
+	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/provider"
 	"github.com/hashicorp/terraform-plugin-framework/provider/schema"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
-	"github.com/hashicorp/terraform-plugin-framework/datasource"
 )
 
 // Ensure the implementation satisfies the expected interfaces.
-// var (
-//     _ provider.Provider = &azvmcapabilityProvider{}
-// )
+var (
+	_ provider.Provider = &azvmcapabilityProvider{}
+)
 
 func New() provider.Provider {
 	return &azvmcapabilityProvider{}
@@ -27,7 +28,8 @@ func (p *azvmcapabilityProvider) Schema(_ context.Context, _ provider.SchemaRequ
 	resp.Schema = schema.Schema{}
 }
 
-func (p *azvmcapabilityProvider) Configure(ctx context.Context, req provider.ConfigureRequest, resp *provider.ConfigureResponse) {}
+func (p *azvmcapabilityProvider) Configure(ctx context.Context, req provider.ConfigureRequest, resp *provider.ConfigureResponse) {
+}
 
 func (p *azvmcapabilityProvider) DataSources(_ context.Context) []func() datasource.DataSource {
 	return []func() datasource.DataSource{
