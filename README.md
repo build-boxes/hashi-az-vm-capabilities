@@ -121,6 +121,10 @@ Checks if Azure VM SKU supports Encryption-At-Host. Uses a Terraform custom Prov
     ```Bash
     make build install
     ```
+    OR  
+    ```
+    go install .
+    ```
 
 ## Reference Links
 1. [https://developer.hashicorp.com/terraform/tutorials/providers-plugin-framework](https://developer.hashicorp.com/terraform/tutorials/providers-plugin-framework)
